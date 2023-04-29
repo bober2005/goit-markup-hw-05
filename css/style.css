@@ -188,7 +188,6 @@ body {
 .customers-link:hover {
 	border-color: #404bbf;
 	color: #404bbf;
-
 }
 
 
@@ -1041,4 +1040,18 @@ body {
 .paragraph-iteam {
 	position: absolute;
 
+}
+
+
+
+
+
+
+
+.aaaa:hover {
+	color: #404BBF;
+	border-color: #31d0aa;
+}
+.bbbb {
+	fill: currentColor;
 }
