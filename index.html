@@ -50,7 +50,7 @@
             <div class="container">
                 <h1 class="main-title">Effective Solutions
                     for Your Business</h1>
-                <button class="btn" type="button"> Order Servic</button>
+                <button class="btn" type="button" data-modal-open> Order Servic</button>
             </div>
         </section>
 
@@ -424,15 +424,19 @@
 
 
 
-    <section>
-        <a class="aaaa" href="">
-            <svg class="bbbb" width="" height="">
-                <use href="./images/symbol-defs.svg#icon-social-tumblr"></use>
+      <!-- Modal window -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal-btn" data-modal-close>
+            <svg class="modal-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
-        </a>
-    </section>
+          </button>
+        </div>
+      </div>
 
-
+      <script src="./js/modal.js"></script> 
 </body>
+
 
 </html>
