@@ -134,69 +134,54 @@ body {
 	transition: 800ms;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
 	background-color: #404bbf;
-
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 
 /* portfolio */
 
-.portfolio-navigation:hover {
-	color: #404bbf;
 
-}
 
 .section-portfolio-link:hover.overlay {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
 
 }
 
-.address-navigation:hover {
-	color: #404bbf;
-
-}
 
 /* button */
-.navigation-button:hover {
+.navigation-button:hover,
+.navigation-button:focus {
 	color: #FFFFFF;
 	background-color: #404BBF;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border: 1px solid transparent;
-	transition: 1200ms;
-	transition-timing-function: cubic-bezier(0.42, 0, 0.31, 0.98);
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.library-portfolio:hover {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
-}
 
 
 
 /* social-network */
 
-.social-network-link:hover {
-	background-color: #404bbf;
-	transition: 1000ms;
-}
 
-/* customers */
-.customers-link:hover {
-	border-color: #404bbf;
-	color: #404bbf;
-}
+
+
 
 
 
 /* footer */
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
 	background-color: #31d0aa;
-	transition: 1000ms;
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -233,42 +218,38 @@ body {
 }
 
 /* portfolio */
-.portfolio-navigation:focus {
+
+
+.address-navigation:focus,
+.address-navigation:hover {
 	color: #404bbf;
-
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-navigation:focus {
-	color: #404bbf;
-
-}
-
-.section-portfolio-link:focus {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
-
+.section-portfolio-link:focus,
+.section-portfolio-link:hover {
+transition: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.navigation-button:focus {
-	color: #FFFFFF;
-	background-color: #404BBF;
-	border: 1px solid transparent;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	transition: 1200ms;
-	transition-timing-function: cubic-bezier(0.42, 0, 0.31, 0.98);
-}
 
 /* social-network */
-.social-network-link:focus {
+.social-network-link:focus,
+.social-network-link:hover {
 	background-color: #404bbf;
-	transition: 1000ms;
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* customers */
-.customers-link:focus {
+.customers-link:focus,
+.customers-link:hover {
 	border-color: #404bbf;
 	color: #404bbf;
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer  */
@@ -322,7 +303,8 @@ body {
 	padding-top: 24px;
 	padding-bottom: 24px;
 	position: relative;
-
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -335,7 +317,7 @@ body {
 
 	border-radius: 2px;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 }
 
@@ -343,7 +325,8 @@ body {
 .header-items:hover::after,
 .header-items:focus::after {
 	background-color: #404BBF;
-	transition: 1500ms;
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -776,7 +759,7 @@ body {
 }
 
 .header-portfolia {
-	border-bottom: 1px solid #e7e9fc
+	border-bottom: 1px solid #e7e9fc;
 }
 
 
@@ -849,11 +832,18 @@ body {
 .portfolio-navigation:hover::after,
 .portfolio-navigation:focus::after {
 	background-color: #404BBF;
-	transition: 1500ms;
+	transition: 250ms;
+	cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-
+.portfolio-navigation:hover,
+.portfolio-navigation:focus{
+	transition: 250ms;
+	transition: cubic-bezier(0.4, 0, 0.2, 1);
+	color: #404BBF;
+	
+}
 
 .address-list {
 	display: flex;
@@ -891,8 +881,7 @@ body {
 }
 
 .section-img {
-	margin-bottom: 120px;
-	margin-top: 0;
+	padding-top: 0;
 }
 
 .section-portfolio-link {}
@@ -918,6 +907,13 @@ body {
 	width: calc((100% - 48px) / 3);
 }
 
+.iteams:hover,
+.iteams:focus{
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
 .navigation-button {
 	font-family: "Roboto", sans-serif;
 	font-style: normal;
@@ -1085,6 +1081,12 @@ body {
 	background-color: #e7e9fc;
 }
 
-.modal-icon {
-	fill: #2e2f42;
+.modal-btn:hover{
+	background-color: #404BBF;
+	fill: currentColor;
+}
+
+.modal-icon:hover{
+	fill: #FFFFFF;
+
 }
